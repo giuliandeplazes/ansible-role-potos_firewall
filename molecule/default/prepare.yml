@@ -11,4 +11,4 @@
         cmd: 'apt-get update && apt-get upgrade -y'
       when: ansible_distribution == 'Ubuntu'
       register: out
-      changed_when: "'0 upgraded' not in out.stdout"
+#      changed_when: "'0 upgraded' not in out.stdout"
